@@ -54,6 +54,7 @@
   display: flex;
   gap: 15px;
   background-color: gray;
+  align-items: center;
 }
 
 .col {
