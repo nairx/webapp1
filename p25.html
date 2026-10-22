@@ -1,0 +1,26 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+      div {
+        background-color: orange;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="b1">Show</button>
+    <button id="b2">Hide</button>
+    <button id="b3">Toggle</button>
+    <div id="box"></div>
+    <script>
+      $("#b1").on("mouseover", function () {
+        $("#box").fadeToggle(1000);
+      });
+    </script>
+  </body>
+</html>

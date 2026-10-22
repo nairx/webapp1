@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+      div {
+        background-color: orange;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="b1">SlideUp</button>
+    <button id="b2">SlideDown</button>
+    <div id="box"></div>
+    <script>
+      $("#b1").on("click", function () {
+        $("#box").slideUp(1000);
+      });
+      $("#b2").on("click", function () {
+        $("#box").slideDown(1000);
+      });
+    </script>
+  </body>
+</html>
